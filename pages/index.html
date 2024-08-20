@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>index</title>
   </head>
   <body>
@@ -107,13 +111,98 @@
     </section>
 
     <!-- 精選文章 -->
-    <section>
+    <section class="py-8 py-lg-10">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-
+        <div class="row h-100">
+          <div class="col-lg-4 d-flex flex-column">
+            <h2 class="mb-5">精選文章</h2>
+              <div class="d-flex align-items-center mt-auto">
+               <div class="swiper-next d-inline-block px-3 py-1 border border-1 border-neutral-400 rounded-5 me-2"><i class="bi bi-arrow-left"></i>
+              </div>
+              <div class="swiper-pagination-custom border-1 bg-primary-400" style="height: 1px; width: 80px;"></div>
+              <div class="swiper-prev px-3 py-1 border border-1 border-neutral-400 rounded-5 ms-2"><i class="bi bi-arrow-right"></i></div>
+            </div>
           </div>
-        </div>
+          <div class="col-lg-8">
+            <div class="swiper">
+              <div class="swiper-wrapper row">
+                <!-- card-1 -->
+                <div class="swiper-slide col-12 col-lg-6">
+                  <div class="card border-0">
+                    <picture class="w-100 p-0">
+                      <source srcset="../assets/images/articles-1-sm.png" media="(max-width: 996px)" type="image/svg+xml" class="p-0 mx-auto">
+                      <img src="../assets/images/articles-1.png" class="img-fluid w-100 h-100 border-0" alt="露營"> 
+                    </picture>
+                    <div class="py-5 px-1">
+                    <h5 class="fw-bold">私人島嶼的露營奇遇記</h5>
+                    <p>遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                    </div>
+                    <div class="d-flex px-1">
+                    <h5 class="text-accent-200">Read More</h5>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="swiper-slide col-12 col-lg-6">
+                  <div class="card border-0">
+                    <picture class="w-100 p-0">
+                      <source srcset="../assets/images/articles-2-sm.png" media="(max-width: 996px)" type="image/svg+xml" class="p-0 mx-auto">
+                      <img src="../assets/images/articles-2.png" class="img-fluid w-100 h-100 border-0" alt="banner"> 
+                    </picture>
+                    <div class="py-5 px-1">
+                    <h5 class="fw-bold">窺探米其林三星主廚的絕密手藝</h5>
+                    <p>在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center px-1">
+                    <a href="#"><h5 class="text-accent-200">Read More</h5></a>
+                    <span class="badge bg-primary-400 text-light opacity-50">會員專屬</span>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+
+                <!-- card-1 -->
+                <div class="swiper-slide col-12 col-lg-6">
+                  <div class="card border-0">
+                    <picture class="w-100 p-0">
+                      <source srcset="../assets/images/articles-1-sm.png" media="(max-width: 996px)" type="image/svg+xml" class="p-0 mx-auto">
+                      <img src="../assets/images/articles-1.png" class="img-fluid w-100 h-100 border-0" alt="露營"> 
+                    </picture>
+                    <div class="py-5 px-1">
+                    <h5 class="fw-bold">私人島嶼的露營奇遇記</h5>
+                    <p>遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                    </div>
+                    <div class="d-flex px-1">
+                    <h5 class="text-accent-200">Read More</h5>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="swiper-slide col-12 col-lg-6">
+                  <div class="card border-0">
+                    <picture class="w-100 p-0">
+                      <source srcset="../assets/images/articles-2-sm.png" media="(max-width: 996px)" type="image/svg+xml" class="p-0 mx-auto">
+                      <img src="../assets/images/articles-2.png" class="img-fluid w-100 h-100 border-0" alt="banner"> 
+                    </picture>
+                    <div class="py-5 px-1">
+                    <h5 class="fw-bold">窺探米其林三星主廚的絕密手藝</h5>
+                    <p>在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center px-1">
+                    <a href="#"><h5 class="text-accent-200">Read More</h5></a>
+                    <span class="badge bg-primary-400 text-light opacity-50">會員專屬</span>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
       </div>
     </section>
 
@@ -121,9 +210,9 @@
     <section class="bg-secondary py-8 py-lg-10 position-relative">
       <div class="container">
         <div class="row justify-content-center text-center">
-          <div class="col-12 col-lg-4 text-nowrap">
-            <h4 class="text-primary-400">\ 母親節強檔活動 / </h4>
-            <h2 class="fw-bold lh-lg">家庭訂閱方案限時 7 折</h2>
+          <h4 class="text-primary-400">\ 母親節強檔活動 / </h4>
+          <h2 class="fw-bold lh-lg">家庭訂閱方案限時 7 折</h2>
+          <div class="col-9 col-sm-6 col-lg-3 text-nowrap">
             <ul class="list-unstyled lh-lg text-neutral-400 text-start">
               <li><i class="bi bi-check me-2 fs-5"></i>每月最新文章無限閱讀</li>
               <li><i class="bi bi-check me-2 fs-5"></i>專屬會員限定內容</li>
@@ -135,8 +224,8 @@
             <button class="btn btn-success btn-lg text-light rounded-pill" type="button">我想了解</button>
           </div>
         </div>
-        <picture class="position-absolute end-0 bottom-0 ms-0 ms-md-10">
-          <source srcset="../assets/images/bg-2-sm.png" media="(max-width: 996px)" type="image/svg+xml">
+        <picture class="position-absolute bottom-0 end-0 translate-middle-x">
+          <source srcset="../assets/images/bg-2-sm.png" media="(max-width: 996px)" type="image/svg+xml" class="end-0">
           <img src="../assets/images/bg-2.png" alt="">
         </picture>
         <picture class="position-absolute bottom-0 d-none d-md-block">
@@ -449,6 +538,24 @@
     var scrollSpyContentEl = document.getElementById('content')
     var scrollSpy = bootstrap.ScrollSpy.getOrCreateInstance(scrollSpyContentEl) // Returns a Bootstrap scrollspy instance
     </script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 2, //顯示 2 張
+      spaceBetween: 48, //每張間距 48px
+      // 分頁、左右箭頭、滾動條若有使用則必需設定          
+      // 分頁   
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      // 左右箭頭    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
+    
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
